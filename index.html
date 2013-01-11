@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<title>手机版table表格优化</title>
+<script type="text/javascript" src="./jquery.js"></script>
+<script type="text/javascript" src="./table_mobile.js"></script>
+<style>
+body {text-align: center;}
+table,th,td{
+	border:1px solid #DADADA;
+	padding: 6px 4px;
+	line-height: 1.6em;
+	border-collapse:collapse;
+}
+th{
+	background: #EEE;
+}
+.mainDiv{
+	//text-align:center;margin-right:auto;margin-left:auto;
+	width: 1500px;
+}
+</style>
+</head>
+<body>
+<div class="mainDiv">
+<input type="button" value='测试' style="margin: 10px auto" onclick="if(this.value=='测试')this.value='撤销';else document.location.reload();table_mobile.mobile_deal();">
+<table class="mainTable" style="width:100%;">
+<tbody align=center>
+    <tr>
+        <th rowspan='2'>服务器</th>
+        <th rowspan='2'>鱼饵品质</th>
+        <th rowspan='2'>使用人数</th>
+        <th rowspan='2'>使用次数</th>
+        <th colspan='3' mobile_th>购买鱼饵消费</th>
+        <th rowspan='2'>使用立即完成人数</th>
+        <th rowspan='2'>使用立即完成次数</th>
+        <th colspan="3">立即完成消费</th>
+    </tr>
+    <tr>
+        <th>绑定元宝</th>
+        <th>&nbsp;&nbsp;元宝&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;总计&nbsp;&nbsp;</th>
+        <th>绑定元宝</th>
+        <th>&nbsp;&nbsp;元宝&nbsp;&nbsp;</th>
+        <th>&nbsp;&nbsp;总计&nbsp;&nbsp;</th>
+    </tr>
+	<tr>
+        <td rowspan='3'>测试服</th>
+        <td>普通</td>
+		<td>10</td>
+		<td>11</td>
+		<td>12</td>
+		<td>13</td>
+		<td>25</td>
+		<td>14</td>
+		<td>15</td>
+		<td>16</td>
+		<td>17</td>
+		<td>33</td>
+    </tr>
+	<tr>
+        <td>一般</td>
+		<td>20</td>
+		<td>21</td>
+		<td>22</td>
+		<td>23</td>
+		<td>45</td>
+		<td>24</td>
+		<td>25</td>
+		<td>26</td>
+		<td>27</td>
+		<td>53</td>
+    </tr>
+	<tr>
+        <td>高级</td>
+		<td>30</td>
+		<td>31</td>
+		<td>32</td>
+		<td>33</td>
+		<td>65</td>
+		<td>34</td>
+		<td>35</td>
+		<td>36</td>
+		<td>37</td>
+		<td>73</td>
+    </tr>
+</tbody>
+</table>
+</div>
+</body>
+</html>
