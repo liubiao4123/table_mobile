@@ -15,11 +15,9 @@ table_mobile.table_class = 'mainTable';
 
 2.指定由此属性的table忽略优化，
 table_mobile.table_ignore = 'mobile_ignore';
-如："<table mobile_ignore></table>"
 
 3.有此属性的th列，将在优化后显示，只在head的第一行设置生效，默认显示table的前两列
 table_mobile.table_show_th = 'mobile_th';
-如："<tr><th mobile_th></th></tr>"
 
 4.默认显示前几列的数据
 table_mobile.table_show_th_auto = 2;
